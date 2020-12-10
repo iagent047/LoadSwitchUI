@@ -35,6 +35,7 @@ This angularJS based app displays the state of load of each room in a location. 
 <h4>Each load's status should be displayed.</h4>
 <h4>The tile should be 'BLUE' when the load is in 'ON' state and in 'RED' when in 'OFF' state.</h4>
 <h4>Each tile is dynamic and is basically a switch. Hence user can toggle the state of any load as needed</h4>
+<h4>User can add/remove data sets from the json file as required, this would simultaneously add/remove the number of tiles as well</h4>
 --------------------------------------------------------------------
 <h3>Credits: Tejas</h3>
 --------------------------------------------------------------------
