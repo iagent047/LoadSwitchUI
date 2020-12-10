@@ -12,7 +12,7 @@ This angularJS based app displays the state of load of each room in a location. 
 --------------------------------------------------------------------
 <h3>Files:</h3>
 <ol>
-<li><h4>ex1.html --> webpage</h4></li>
+<li><h4>index.html ---> Webpage</h4></li>
 <li><h4>.gitignore</h4></li>
 <li><h4>angular-ui-switch.css</h4></li>
 <li><h4>angular-ui-switch.js</h4></li>
@@ -22,7 +22,6 @@ This angularJS based app displays the state of load of each room in a location. 
 <li><h4>bower.json</h4></li>
 <li><h4>countries.json</h4></li>
 <li><h4>countries1.json</h4></li>
-<li><h4>index.html</h4></li>
 <li><h4>logo.png</h4></li>
 <li><h4>Makefile</h4></li>
 <li><h4>package.json</h4></li>
