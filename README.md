@@ -29,12 +29,12 @@ This angularJS based app displays the state of load of each room in a location. 
 </ol>
 --------------------------------------------------------------------
 <h3>Brief:</h3>
-<h4>The task was to replicate a flask dashboard website frontend. I have managed build it as close as possible using HTML5 with Bootstrap 3 & google charts utiliztion. The web site contains the following sections:</h4>
-<h4>A top navbar with multiple options including a search box.</h4>
-<h4>A side navigation bar with multiple options.</h4>
-<h4>four Cards to display real time values fetched from external sources.</h4>
-<h4>Three maps to plot data over time.</h4>
-<h4>Two tables to display table data of specific records as per the required/defined logic.</h4>
+<h4>The task was to create a UI in which tiles that display the status/information of loads of a particular room in a given location with below requirements:</h4>
+<h4>Tiles should be sorted as per location.</h4>
+<h4>Each tile (a switch) should display the details of one load of a particluar room.</h4>
+<h4>Each load's status should be displayed.</h4>
+<h4>The tile should be 'BLUE' when the load is in 'ON' state and in 'RED' when in 'OFF' state.</h4>
+<h4>Each tile is dynamic and is basically a switch. Hence user can toggle the state of any load as needed</h4>
 --------------------------------------------------------------------
 <h3>Credits: Tejas</h3>
 --------------------------------------------------------------------
