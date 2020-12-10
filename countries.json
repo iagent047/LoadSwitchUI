@@ -1,0 +1,32 @@
+[
+  {
+    "code": "01",
+    "name": "Kitchen",
+    "load": "Chimmney"
+  },
+  {
+    "code": "02",
+    "name": "Livivng room",
+    "load": "Fan"
+  },
+  {
+    "code": "03",
+    "name": "Bedroom",
+    "load": "Light"
+  },
+  {
+    "code": "04",
+    "name": "Kitchen",
+    "load": "Light"
+  },
+  {
+    "code": "05",
+    "name": "Livivng room",
+    "load": "Light"
+  },
+  {
+    "code": "06",
+    "name": "Bedroom",
+    "load": "Light"
+  }
+]

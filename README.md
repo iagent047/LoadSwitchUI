@@ -1,41 +1,88 @@
-# LoadSwitchUI
-This angularJS based app displays the state of load of each room in a location. It also allows you to toggle its state and also add/remove more UI display with data inputs in the JSON file.
-<h3>Requirements:</h3>
-<ol>
-  <li><h4>VScode</h4></li>
-  <li><h4>AngularJS 1.5.0</h4></li>
-</ol>
---------------------------------------------------------------------
-<h3>Additional setup:</h3>
-<h4>Code can be reviewed by a normal text editior like Notepad.</h4>
-<h4>For better view use VScode.</h4>
---------------------------------------------------------------------
-<h3>Files:</h3>
-<ol>
-<li><h4>index.html ---> Webpage</h4></li>
-<li><h4>.gitignore</h4></li>
-<li><h4>angular-ui-switch.css</h4></li>
-<li><h4>angular-ui-switch.js</h4></li>
-<li><h4>angular-ui-switch.min.css</h4></li>
-<li><h4>angular-ui-switch.min.js</h4></li>
-<li><h4>app.js</h4></li>
-<li><h4>bower.json</h4></li>
-<li><h4>countries.json</h4></li>
-<li><h4>countries1.json</h4></li>
-<li><h4>logo.png</h4></li>
-<li><h4>Makefile</h4></li>
-<li><h4>package.json</h4></li>
-<li><h4>README.MD</h4></li>
-</ol>
---------------------------------------------------------------------
-<h3>Brief:</h3>
-<h4>The task was to create a UI in which tiles that display the status/information of loads of a particular room in a given location with below requirements:</h4>
-<h4>Tiles should be sorted as per location.</h4>
-<h4>Each tile (a switch) should display the details of one load of a particluar room.</h4>
-<h4>Each load's status should be displayed.</h4>
-<h4>The tile should be 'BLUE' when the load is in 'ON' state and in 'RED' when in 'OFF' state.</h4>
-<h4>Each tile is dynamic and is basically a switch. Hence user can toggle the state of any load as needed</h4>
-<h4>User can add/remove data sets from the json file as required, this would simultaneously add/remove the number of tiles as well</h4>
---------------------------------------------------------------------
-<h3>Credits: Tejas</h3>
---------------------------------------------------------------------
+# [angular](https://angularjs.org/)-ui-switch
+
+This is a simple iOS 7 style switch directive for AngularJS. You can use this module as you would use the default HTML checkbox input element. This is a super lightweight module and you can completely change the design using just CSS.
+
+Supported by all modern browsers: Chrome, Firefox, Opera, Safari, IE8+
+
+![YoomJS](https://raw.githubusercontent.com/xpepermint/angular-ui-switch/master/logo.png)
+
+Inspired by [switchery](https://github.com/abpetkov/switchery) - in angular way.
+
+## Installation
+
+Download the package from `github`. The package is also available over `npm install angular-ui-switch` or `bower install angular-ui-switch`.
+
+Include `javascript` and `css` files into your page.
+
+```html
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  ...
+  <link rel="stylesheet" href="/ui-switch.min.css"/>
+</head>
+<body>
+  ...
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.3/angular.min.js"></script>
+  <script src="/ui-switch.min.js"></script>
+</body>
+</html>
+```
+
+Declare a dependency on the module.
+
+```js
+angular.module('myModule', ['uiSwitch']);
+```
+
+Insert the switch in your html template.
+
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" class="green"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+Add optional on/off text
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" on="On" off="Off" class="green"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+Disabled state
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" class="green"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+## Design
+
+You can completely change the design. All the magic is hidden inside two CSS classes.
+
+```css
+.switch {
+  /* frame */
+}
+.switch small {
+  /* button */
+}
+.switch.checked {
+  /* frame when enabled */
+}
+.switch.checked small {
+  /* button when enabled */
+}
+```
+
+## Publishing
+
+1. Update version in `package.json` and `bower.json`.
+
+2. Run `make compile` to minify files.
+
+3. Run `make publish` to publish.

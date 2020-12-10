@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../angular-ui-switch.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="../angular-ui-switch.js"></script>
+    <script src="app.js"></script>
+    <style>
+      body 
+      {
+        font: 17px Calibri;
+        /*padding-left: 200px;*/
+        padding-inline-start: 300px;
+      }
+      table 
+      {
+          width: auto;
+      }
+      table, th, td 
+      {
+          border: none;
+          border-collapse: collapse;
+          padding: 2px 3px;
+          text-align: left;
+          width: 500px;
+          background-color: rgb(139, 131, 131);
+          border-radius: 10px;
+      }
+     </style>
+</head>
+<body>
+  <table>
+    <tr>
+        <th>Home, Bengaluru</th>
+    </tr>
+  </table>
+  <br>
+  <div class="row" ng-controller="CountryCtrl">
+    <div class="block"></div>
+      <div ng-repeat="country in countries">
+        <form data-ng-controller="MyController">
+       <!--Examples of using switch text on/off values.  These values can be anything.  First example shows basic on/off-->
+        <switch name="onOff" ng-model="onOff" on='[ON] {{country.name}}/{{country.load}}' off='[OFF] {{country.name}}/{{country.load}}' style="margin-right: 10px; left: -78px;"></switch>
+        </form>
+        <br><br> 
+      </div>
+    </div>
+    </div>
+    <br>
+    <table>
+      <tr>
+          <th>Office, Bengaluru</th>
+      </tr>
+    </table>
+    <br>
+    <div class="row" ng-controller="CountryCtrl">
+      <div class="block"></div>
+        <div ng-repeat="country1 in countries1">
+          <form data-ng-controller="MyController">
+         <!--Examples of using switch text on/off values.  These values can be anything.  First example shows basic on/off-->
+          <switch name="onOff" ng-model="onOff" on='[ON] {{country1.name}}/{{country1.load}}' off='[OFF] {{country1.name}}/{{country1.load}}' style="margin-right: 10px; left: -78px;"></switch>
+          </form>
+          <br><br> 
+        </div>
+      </div> 
+      </div>
+</body>
+</html>
